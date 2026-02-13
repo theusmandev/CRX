@@ -1,15 +1,12 @@
 {
   "manifest_version": 3,
   "name": "Blogger Link Auditor Pro",
-  "version": "1.0",
-  "description": "Checks Drive, IG, and FB links in Blogger Editor",
+  "version": "1.2",
+  "description": "Drive, Instagram, and Facebook link checker for Blogger",
   "permissions": ["activeTab"],
-  "action": {
-    "default_title": "Audit Links"
-  },
   "content_scripts": [
     {
-      "matches": ["https://www.blogger.com/blog/post/edit/*"],
+      "matches": ["https://www.blogger.com/blog/post/edit/*", "https://www.blogger.com/u/*/blog/post/edit/*"],
       "js": ["content.js"]
     }
   ],
